@@ -1,0 +1,42 @@
+/*work in progress*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/pokemonbg.jpg');
+    background-size: cover;
+}
+.nav-top{
+    background-color: rgba(50, 50, 50, 0.2);
+    height: 50px;
+}
+.nav-content{
+    float: right;
+    margin: 13px 10px 0 0;
+}
+#result{
+    text-align: center;
+}
+#result > li{
+    padding: 20px;
+}
+#name{
+    text-transform: uppercase;
+}
+ol li{
+    padding: 5px;
+}
+#list{
+    border-top: 0;
+    border-right: 0;
+    background-color: rgba(50, 50, 50, 0.2);
+    height: 100vh;
+    min-width: 200px;
+    float: right;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+
