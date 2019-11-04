@@ -1,4 +1,5 @@
-let myform = document.getElementById('myform');
+
+let form = document.getElementById("myform");
 let name = document.getElementById('name');
 let lastname = document.getElementById('lastname');
 let username = document.getElementById('username');
@@ -8,20 +9,24 @@ let confirmpassword = document.getElementById('confirmpassword');
 let adress = document.getElementById('adress');
 let city = document.getElementById('city');
 let zip = document.getElementById('zip');
-let phone = document.getElementById('phone');
-let age = document.getElementById('age');
-let hobbies = document.getElementById('hobbies');
-let submit = document.getElementById('submit');
+let submitbtn = document.getElementById('submitbtn');
+let error = document.getElementById('error');
+
+form.addEventListener('submit', (e) =>{
+    let messages = []
+    if (name.value === '' || name.value == null){
+        messages.push('Name is required')
+    }
+    if (password.value.length <= 6){
+    messages.push ('Password must be longer than 6 characters')
+    }
+    if (password.value != confirmpassword.value){
+        messages.push ('Passwords do not match')
+    }
+    if (messages.length > 0){
+        e.preventDefault()
+        error.innerText = messages.join(', ')
+    }
+})
 
 
-    //    let dataname     = name.value;
-    //    let datalastname = lastname.value;
-    //    let datausername = username.value;
-    //    let dataemail    = email.value;
-    //    let datapassword = password.value;
-    //    let dataadress   = adress.value;
-    //    let datacity     = city.value;
-    //    let datazip      = zip.value;
-    //    let dataphone    = phone.value;
-    //    let dataage      = age.value;
-    //    let datahobbies  = hobbies.value; 
