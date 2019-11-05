@@ -32,7 +32,14 @@ input {
 }
 
 .error {
+  border: 1px solid red;
+}
+
+#error {
+  width: 400px;
+  font-size: 0.7rem;
   color: red;
+  padding-bottom: 1rem;
 }
 
 .backgound {
