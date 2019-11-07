@@ -1,14 +1,17 @@
-Hi as you already know my name is Mansur...And you find yourself in my learning-frontend repository.
-Please click [this](https://scenoxmans.github.io/learning-front-end/.) if you are here to see my projects.
+###Hello and Welcome
+
+My name is Mansur I am student at Becode. Feel free to check out my exercises. 
+
+Please click [this](https://scenoxmans.github.io/learning-front-end/) if you are here to see my projects.
 
 ## Contents
 
-1. javascript [Go there]()
-    * Variables [Go there]()
-    * Conditions [Go there]()
-    * Js-loops [Go there]()
-    * Js-dom-manipulation [Go there]()
-    * Js-functions [Go there]()
-    * Ajax-js [Go there]()
-    * Console-rpg [Go there]()
-    * Js-form [Go there]()
+1.  [javascript]()
+    * [Variables]() - [Raw Code]()
+    * [Conditions]() - [Raw Code]()
+    * [Js-loops]() - [Raw Code]()
+    * [Js-dom-manipulation]() - [Raw Code]()
+    * [Js-functions]() - [Raw Code]()
+    * [Ajax-js]() - [Raw Code]()
+    * [Console-rpg]() - [Raw Code]()
+    * [Js-form]() - [Raw Code]()
