@@ -1,10 +1,11 @@
 This is my fifth javascript exercise... I got some better look at api manipulations...
 
-Click [here]() to see the exercise. 
+Click [here](https://scenoxmans.github.io/learning-frontend/exercises/1.javascript/6.ajax-js/) to see the exercise. 
 
-Click [here]() to go back to exercises folder.
+Click [here](https://github.com/scenoxmans/learning-frontend/tree/master/exercises/1.javascript) to go back to my exercise folder.
 
-Click [here]() to go back to navigation page.
+Click [here](https://scenoxmans.github.io/learning-frontend/) to go back to navigation page.
+
 
 ## Goals
 
