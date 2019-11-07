@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
+                                <title>Rock, paper, scissors, ...</title>
+</head>
+<body>
+<div class="top">
+                                    <h1>Rock, Paper, Scissors....</h1>
+</div>
+                                        <!-- Game options -->
+<div class="pos">
+                        <h3>Amount of players</h3>
+    <select name="players" id="players">
+            <option value="1">1 Player</option>
+            <option value="2">2 Players</option>
+    </select>
+</div>
+                                <!-- Player 1 choice -->
+<div class="wrapper">
+          <div class="left"><img src="res/img/p1.png">
+            <select name="p1choice" id="p1choice"></select></div>
+
+                            <!-- Player 2 choice -->
+
+          <div class="right"><select name="p2choice" id="p2choice" disabled></select><img src="res/img/p2.png">
+            </div>
+</div>
+                            <!-- Start button -->
+<button id="play">Fight</button>
+                            <!-- RESULT -->
+            <div id="result" class="border"></div>
+<script src="res/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button {
+    margin: 20px;
+    border-radius: 4px;
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+#field {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgblack {
+    background-color: black;
+    color: white;
+}
+.cifry{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.bookvy{
+    display: flex;
+    justify-content: flex-start;
+}
