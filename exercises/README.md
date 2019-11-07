@@ -1,9 +1,3 @@
-### Hello and Welcome
-
-My name is Mansur I am student at Becode. Feel free to check out my exercises. 
-
-Please click [this](https://scenoxmans.github.io/learning-frontend/) if you are here to see my projects.
-
 ## Content
 
 1.  [javascript]()

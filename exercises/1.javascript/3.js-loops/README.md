@@ -1,10 +1,10 @@
 This is my second javascript exercise. My goal for this exercise was to create a field of blocks using javascript loops.
 
-Click [this](https://scenoxmans.github.io/javaloops/.) to enter a loop that i made. 
+Click [this](https://scenoxmans.github.io/learning-frontend/exercises/1.javascript/3.js-loops/) to enter a loop that i made. 
 
-Click [here]() to go back to my exercises folder.
+Click [here](https://github.com/scenoxmans/learning-frontend/tree/master/exercises/1.javascript) to go back to my exercise folder.
 
-Click [here]() to go back to navigation page.
+Click [here](https://scenoxmans.github.io/learning-frontend/) to go back to navigation page.
 
 ## Goals
 - [x] Understand how animations work in javascript.
