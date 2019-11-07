@@ -4,20 +4,20 @@ Here you will find my javascript exercises... Pressing [this](https://scenoxmans
 
 ##Or use these links:
 
-1.[Variables]() [Raw code]()
+1.[Variables]() - [Raw code]()
 
-2.[Conditions]() [Raw code]()
+2.[Conditions]() - [Raw code]()
 
-3.[Js-loops]() [Raw code]()
+3.[Js-loops]() - [Raw code]()
 
-4.[Js-dom-manipulation]() [Raw code]()
+4.[Js-dom-manipulation]() - [Raw code]()
 
-5.[Js-functions]() [Raw code]()
+5.[Js-functions]() - [Raw code]()
 
-6.[Ajax-js]() [Raw code]()
+6.[Ajax-js]() - [Raw code]()
 
-7.[Console-rpg]() [Raw code]()
+7.[Console-rpg]() - [Raw code]()
 
-8.[Js-form]() [Raw code]()
+8.[Js-form]() - [Raw code]()
 	
 	
