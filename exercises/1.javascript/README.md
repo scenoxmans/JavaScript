@@ -2,7 +2,7 @@ JavaScript is a scripting or programming language that allows you to implement c
 
 Here you will find my javascript exercises... Pressing [this](https://scenoxmans.github.io/learning-javascript/.) will open navigation so go ahead and press it!
 
-##Or use these links:
+## Or use these links:
 
 1.[Variables]() - [Raw code]()
 
