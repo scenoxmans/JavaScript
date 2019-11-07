@@ -6,18 +6,18 @@ Here you will find my javascript exercises... Pressing [this](https://scenoxmans
 
 1.[Variables]() [Raw code]()
 
-2.[conditions]() [Raw code]()
+2.[Conditions]() [Raw code]()
 
-3.[js-loops]() [Raw code]()
+3.[Js-loops]() [Raw code]()
 
-4.[js-dom-manipulation]() [Raw code]()
+4.[Js-dom-manipulation]() [Raw code]()
 
-5.[js-functions]() [Raw code]()
+5.[Js-functions]() [Raw code]()
 
-6.[ajax-js]() [Raw code]()
+6.[Ajax-js]() [Raw code]()
 
-7.[console-rpg]() [Raw code]()
+7.[Console-rpg]() [Raw code]()
 
-8.[js-form]() [Raw code]()
+8.[Js-form]() [Raw code]()
 	
 	
