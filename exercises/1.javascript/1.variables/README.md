@@ -1,8 +1,8 @@
 This is more of a note for me in the future than an exercise.
 
-Click [here](https://scenoxmans.github.io/learning-front-end/exercises/1.javascript/1.variables/) to see it.
+Click [here](https://scenoxmans.github.io/learning-frontend/exercises/1.javascript/1.variables/) to see it.
 
-Click [here](https://github.com/scenoxmans/learning-front-end/tree/master/exercises/1.javascript) to go back to my exercise folder.
+Click [here](https://github.com/scenoxmans/learning-frontend/tree/master/exercises/1.javascript) to go back to my exercise folder.
 
 Click [here](https://scenoxmans.github.io/learning-frontend/) to go back to navigation page.
 
