@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
-                                <title>Rock, paper, scissors, ...</title>
+              
+    <title>Rock, paper, scissors, ...</title>
 </head>
 <body>
-<div class="top">
-                                    <h1>Rock, Paper, Scissors....</h1>
-</div>
+<img src="res/img/banner3.jpg" class="top">
+
+
                                         <!-- Game options -->
 <div class="pos">
-                        <h3>Amount of players</h3>
+                        
     <select name="players" id="players">
             <option value="1">1 Player</option>
             <option value="2">2 Players</option>
     </select>
+    <img src="res/img/vs.png" class="mid">
 </div>
                                 <!-- Player 1 choice -->
 <div class="wrapper">
-          <div class="left"><img src="res/img/p1.png">
+          <div class="left">
+            <div class="player">
+              <p class="player-tag-1">Player 1</p>
+                <img src="res/img/astronaut-svg.svg">
+            </div>
             <select name="p1choice" id="p1choice"></select></div>
+
+
+          
 
                             <!-- Player 2 choice -->
 
-          <div class="right"><select name="p2choice" id="p2choice" disabled></select><img src="res/img/p2.png">
+          <div class="right">
+            <div class="player">
+                <p class="player-tag-2">Player 2</p>
+                <img src="res/img/ninja-svg.svg">
+            </div>
+            <select name="p2choice" id="p2choice" disabled></select>
+
             </div>
 </div>
                             <!-- Start button -->
-<button id="play">Fight</button>
+<div class="footer">
+ 
+<button id="play">Fight!</button>
                             <!-- RESULT -->
+          <div class="log">
             <div id="result" class="border"></div>
+          </div>
+</div>                   <!-- End footer-->          
 <script src="res/js/main.js"></script>
+
 </body>
 </html>

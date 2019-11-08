@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SSF4 ABUKET';
+    src: url('SSF4ABUKET.woff') format('woff'),
+        url('SSF4ABUKET.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
