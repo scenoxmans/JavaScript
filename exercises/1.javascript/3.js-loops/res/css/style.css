@@ -7,10 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 button {
     margin: 20px;
     border-radius: 4px;
+    background: transparent;
 }
 .panel{
     display: flex;
