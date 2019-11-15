@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SHNAKE</title>
+    <link rel="stylesheet" href="res/css/style.css">
 </head>
 <body>
-    
+    <label >Enter your name : <input type="name" id="username"></label>  
+    <audio id="themeSong" src="res/audio/ost.mp3" autoplay loop></audio>
+    <h4>Choose a color for your snake:</h4>
+    <select name="color" id="colors" class="select-css">
+        <option value="green">Green</option>
+        <option value="black">Shadow</option>
+        <option value="white">Invisible</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="brawn">Brawn</option>
+    </select>
+    <div class="score-1"><h4>Score: </h4><div id="score"> 0</div></div>
+    <canvas id="canvas" width="300px" height="300px"></canvas>
+    <button id="play">Play Game</button>
+    <button id="music">Soundtrack</button>
+    <div>
+        <h4>Top 3 longest snakes</h4>
+        <ol>
+          <li id="first"></li>
+            <li id="second"></li>
+            <li id="third"></li>
+        </ol>
+
+    </div>
     <script src="res/js/main.js"></script>
 </body>
 </html>

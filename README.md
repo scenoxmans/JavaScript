@@ -16,3 +16,9 @@ Please click [this](https://scenoxmans.github.io/learning-frontend/) if you are 
     * [Console-rpg](https://scenoxmans.github.io/learning-frontend/exercises/1.javascript/7.console-rpg/) - [</>](https://github.com/scenoxmans/learning-frontend/blob/master/exercises/1.javascript/7.console-rpg/)
     * [Js-form](https://scenoxmans.github.io/learning-frontend/exercises/1.javascript/8.js-form/) - [</>](https://github.com/scenoxmans/learning-frontend/blob/master/exercises/1.javascript/8.js-form/)
 
+1.  [Mastering Javascript](https://github.com/scenoxmans/learning-frontend/tree/master/exercises/2.mastering-javascript)
+    * [Dom-Manipulations](https://scenoxmans.github.io/learning-frontend/exercises/2.mastering-javascript/2.dom-manipulations/) - [</>](https://github.com/scenoxmans/learning-frontend/blob/master/exercises/2.mastering-javascript/2.dom-manipulations/)
+    * [Snake](https://scenoxmans.github.io/learning-frontend/exercises/2.mastering-javascript/2.snake/) - [</>](https://github.com/scenoxmans/learning-frontend/blob/master/exercises/2.mastering-javascript/2.snake/)
+
+
+
