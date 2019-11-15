@@ -1,18 +1,16 @@
 
 let play = document.getElementById('play');
-document.getElementById("play").addEventListener("click", main);
+play.addEventListener('click', main)
 const CANVAS_BORDER_COLOUR = 'black';
 const CANVAS_BACKGROUND_COLOUR = "white";
 const SNAKE_COLOUR = document.getElementById("colors").value;
-const SNAKE_BORDER_COLOUR = 'darkgreen';
+const SNAKE_BORDER_COLOUR = document.getElementById("colors").value;
 const FOOD_COLOUR = 'red';
 const FOOD_BORDER_COLOUR = 'darkred';
 let snake = [{x: 150, y: 150},{x: 140, y: 150},{x: 130, y: 150},{x: 120, y: 150},{x: 110, y: 150}]
 let score = 0;
 let dx = 10;
 let dy = 0;
-let leaderboard =[{"name":"Garry","playerscore":69}, {"name":"Jimmy","playerscore":51}, {"name":"Timmy","playerscore":9}]
-localStorage.setItem("leaderboard",JSON.stringify(leaderboard))
 
 var gameCanvas = document.getElementById("canvas");
 var ctx = gameCanvas.getContext("2d");
@@ -20,15 +18,6 @@ ctx.fillStyle = CANVAS_BACKGROUND_COLOUR;
 ctx.strokestyle = CANVAS_BORDER_COLOUR;
 ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
 ctx.strokeRect(0, 0, gameCanvas.width, gameCanvas.height);
-//Onload function leaderboard
-window.onload = function(){
-  document.getElementById("first").innerHTML =JSON.parse(localStorage.getItem("leaderboard"))[0].name +", " + JSON.parse(localStorage.getItem("leaderboard"))[0].playerscore;
-  document.getElementById("second").innerHTML =JSON.parse(localStorage.getItem("leaderboard"))[1].name +", " + JSON.parse(localStorage.getItem("leaderboard"))[1].playerscore;
-  document.getElementById("third").innerHTML =JSON.parse(localStorage.getItem("leaderboard"))[2].name +", " + JSON.parse(localStorage.getItem("leaderboard"))[2].playerscore;
-  drawSnake();
-  createFood();
-  drawFood();
-}    
 //Music option
     let musicbut = document.getElementById('music');
     let musicon = false;
@@ -36,33 +25,50 @@ window.onload = function(){
 function togglemusic(){
   if (musicon == true) {
    musicon = false;
-   document.getElementById('themeSong').pause();
+   document.getElementById('orochimaru').play();
   }
   else {
   musicon = true;
-  document.getElementById('themeSong').play();
+  document.getElementById('orochimaru').pause();
   }
  };
 
 // Start game
-main();
 // Create food
 createFood();
 // evenListener for when key is pressed
 document.addEventListener("keydown", changeDirection);
 function main() {
-  if (didGameEnd()) return;
+  colors.removeEventListener('input', color);
+  play.removeEventListener('click', main);
+  if (didGameEnd()){
+    alert("The game has ended!");
+  }
   setTimeout(function onTick() {
+    changingDirection = false;
     clearCanvas();
     drawFood();
     advanceSnake();
     drawSnake();
-    // Call main again
+    // Call game again
     main();
   }, 100)
 }
-
-//Create canvas
+//reset function
+function reset(){
+  snake = [  {x: 150, y: 150},  {x: 140, y: 150},  {x: 130, y: 150},  {x: 120, y: 150},  {x: 110, y: 150},];
+  dx = 10;
+  dy = 0
+  clearCanvas();
+  drawSnake();
+  createFood();
+  drawFood();
+  score = 0;
+  document.getElementById('score').innerHTML = score;
+  document.getElementById("colors").addEventListener('input',color);
+  document.getElementById("play").addEventListener("click", main);
+}    
+//Generate canvas 
 function clearCanvas() {
   ctx.fillStyle = CANVAS_BACKGROUND_COLOUR;
   ctx.strokestyle = CANVAS_BORDER_COLOUR;
@@ -105,7 +111,7 @@ function color(){
 function didGameEnd() {
   for (let i = 4; i < snake.length; i++) {
     const didCollide = snake[i].x === snake[0].x && snake[i].y === snake[0].y
-    if (didCollide) return true 
+    if (didCollide) return main()
   }
 }
 function drawFood() {
@@ -125,6 +131,7 @@ function advanceSnake() {
     document.getElementById('score').innerHTML = score;
     // Generate new food location
     createFood();
+    document.getElementById("sound").play();
   } else {
     // Remove the last part of snake body
     snake.pop();
@@ -159,12 +166,12 @@ function drawSnake() {
   snake.forEach(drawSnakePart)
 }
 function drawSnakePart(snakePart) {
-  ctx.fillStyle = SNAKE_COLOUR;
-  ctx.strokestyle = SNAKE_BORDER_COLOUR;
+  ctx.fillStyle = document.getElementById("colors").value;
+  ctx.strokestyle = document.getElementById("colors").value;;
   ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
   ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
 }
-
+//assining keys
 function changeDirection(event) {
   const LEFT_KEY = 37;
   const RIGHT_KEY = 39;

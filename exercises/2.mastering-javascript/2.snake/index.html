@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="res/css/style.css">
 </head>
 <body>
-    <label >Enter your name : <input type="name" id="username"></label>  
-    <audio id="themeSong" src="res/audio/ost.mp3" autoplay loop></audio>
+<div class="top"></div>
+    <audio src="res/audio/ost.mp3"  id="orochimaru" loop></audio>
+    <audio id="sound" src="res/audio/sound.mp3"></audio>
     <h4>Choose a color for your snake:</h4>
     <select name="color" id="colors" class="select-css">
         <option value="green">Green</option>
@@ -19,19 +20,17 @@
         <option value="orange">Orange</option>
         <option value="brawn">Brawn</option>
     </select>
-    <div class="score-1"><h4>Score: </h4><div id="score"> 0</div></div>
+    <div class="score-1"><h4>Length: </h4><div id="score"> 0</div></div>
     <canvas id="canvas" width="300px" height="300px"></canvas>
+   <div class="score-1"> 
     <button id="play">Play Game</button>
     <button id="music">Soundtrack</button>
+   </div>
     <div>
-        <h4>Top 3 longest snakes</h4>
-        <ol>
-          <li id="first"></li>
-            <li id="second"></li>
-            <li id="third"></li>
-        </ol>
-
+            <div class="score-1"><h4>Your Highscore: </h4>
+            <p id="highscore"></p></div>
     </div>
+<div class="bottom"></div>
     <script src="res/js/main.js"></script>
 </body>
 </html>
