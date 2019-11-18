@@ -101,8 +101,8 @@ function color(){
             color ="orange";
             drawSnake();
         break;     
-        case "brawn":
-            color ="brawn";
+        case "brown":
+            color ="brown";
             drawSnake();
         break;                       
     }
