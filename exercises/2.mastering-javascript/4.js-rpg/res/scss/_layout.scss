@@ -1,0 +1,28 @@
+.mage img{
+    width: 200px;
+    height: 200px;
+}
+.mage img:hover{
+    background-size: cover;
+    cursor: pointer;
+}
+.ichigo img:hover{
+    background-size: cover;
+}
+#hit img{
+    height: 2rem;
+    width: 2rem;
+}
+#heal img{
+    height: 2rem;
+    width: 2rem;
+}
+#insult img{
+    height: 2rem;
+    width: 2rem;
+}
+.character{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
