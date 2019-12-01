@@ -105,6 +105,25 @@
         <script>
             ///////////////////////////////////////// PART 2 SCRIPt ////////////////////////////////////////////////////
 
+            let fields = document.querySelectorAll('#emptyRow input');
+
+            document.getElementById('emptyRow').addEventListener('keypress', function(e){
+                if (e.key === 'Enter'){
+                    if (fields[0].value != '' &&fields[1].value != '' && fields[2].value != ''){
+                     let row = document.createElement('tr')
+                     document.querySelector('#pizzaOrders tbody').prepend(row);
+                for (let i = 0; i < fields.length; i++){
+                    let cell = document.createElement('td');
+                    let inputs = document.createElement('span');
+                    inputs.innerText = fields[i].value;
+                    row.appendChild(cell);
+                    cell.appendChild(inputs);
+                    fields[i].value = '';
+                }
+                    }
+                }
+            });
+
         </script>
     </div>
     <!-- END OF Part 2 -->
@@ -319,7 +338,41 @@
             </table>
         </div>
         <script>
-            // Write your code here
+            /////////////////////////////// Write your code here
+                    let searchbar = document.getElementById('searchInput');
+                    let table = document.getElementById('searchTable');
+                    let cells = table.querySelectorAll('tbody td')
+                    searchbar.addEventListener('keyup', function(e){
+                            const searchTxt = searchbar.value.toLowerCase();
+                            const names = table.querySelectorAll('tbody tr');
+
+                            for ( let i = 0; i < names.length; i++){
+                                let cells = names[i].querySelectorAll('td');
+
+                                for ( let d = 0; d < cells.length; d++){
+                                    let out = cells[d].innerText.toLowerCase();
+                                if ( out.indexOf(searchTxt) > -1){
+                                    names[i].style.display = '';
+                                    break;
+                                } else{
+                                    names[i].style.display = "none"
+                                }
+                                }
+                            }
+                        });
+                        // const term = e.target.value.toLowerCase();
+                        // const list = document.querySelector('#searchTable');
+                        // const names = list.getElementsByTagName('td');
+                        // Array.from(names).forEach(function(names){
+                        //     const name = names.firstElementChild.textContent;
+                        //     if (name.toLowerCase().indexOf(term) != -1){
+                        //         name.style.display = '???';
+                        //     } else{
+                        //         name.style.display = 'none';
+                        //     }
+                        // })
+                
+
         </script>
     </div>
     <!-- END OF Part 4 -->
@@ -336,22 +389,25 @@
         </div>
         <script>
             let block = document.getElementById('moveAnimation');
-            block.addEventListener('click', animate);
-            function animate(){
-            anime({
-            targets: block,
-            translateX: 1000,
-            duration: 2000,
-            easing: 'easeInOutSine'
-            },
-            {direction: 'alternate'},
-            {
-            duration: 5000,
-            easing: 'easeInOutSine',
-            loop: true,
-            });}
-
-        </script>
+            let border = block.closest('.row').offsetWidth;
+            right()
+            function right(){
+                anime({
+                    targets: block,
+                    easing: 'easeInExpo',
+                    loop: true,
+                    translateX: [
+                        {
+                        duration: 2000,
+                        value: border - 100,
+                        },
+                        {
+                        duration: 5000,
+                        value: - border + 1150,
+                        }
+                     ],
+                });}
+                    </script>
     </div>
     <!-- END OF Part 5 -->
 
